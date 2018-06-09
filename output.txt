@@ -1,0 +1,65 @@
+Call:
+C5.0.default(x = data[, ], y = test)
+
+Classification Tree
+Number of samples: 15 
+Number of predictors: 4 
+
+Tree size: 6 
+
+Non-standard options: attempt to group attributes
+
+> summary(treeModel)
+
+Call:
+C5.0.default(x = data[, ], y = test)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Sat Jun 09 17:26:35 2018
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 15 cases (5 attributes) from undefined.data
+
+Decision tree:
+
+Cena > 2199: 2 (2)
+Cena <= 2199:
+:...JasnoscEkranu <= 64: 3 (2)
+    JasnoscEkranu > 64:
+    :...Cena <= 1699: 4 (4)
+        Cena > 1699:
+        :...CzasReakcjiMatrycy > 19: 3 (3)
+            CzasReakcjiMatrycy <= 19:
+            :...Matryca <= 24.6: 4 (2)
+                Matryca > 24.6: 3 (2)
+
+
+Evaluation on training data (15 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	     6    0( 0.0%)   <<
+
+
+	   (a)   (b)   (c)   (d)   (e)    <-classified as
+	  ----  ----  ----  ----  ----
+	                                  (a): class 1
+	           2                      (b): class 2
+	                 7                (c): class 3
+	                       6          (d): class 4
+	                                  (e): class 5
+
+
+	Attribute usage:
+
+	100.00%	Cena
+	 86.67%	JasnoscEkranu
+	 46.67%	CzasReakcjiMatrycy
+	 26.67%	Matryca
+
+
+Time: 0.0 secs
